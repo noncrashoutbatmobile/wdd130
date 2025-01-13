@@ -1,0 +1,8 @@
+.custom-image {
+    width: 500px;
+    height: auto;
+    
+    object-fit: cover;
+   /* border: 2px solid #000; */
+   /* border-radius: 8px; */
+}
