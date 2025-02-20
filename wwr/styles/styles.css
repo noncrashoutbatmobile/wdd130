@@ -14,7 +14,10 @@ a {
     margin-top: 50px;
     border-radius: 5px;
 }
-
+.x-logo {
+    height: 64px;
+    width: 64px;
+}
 .join {
     background-color: #ffffff;
     color: #000000;
