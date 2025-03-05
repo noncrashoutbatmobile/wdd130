@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 a {
     text-align: center;
@@ -76,6 +76,7 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 footer p a:hover {
@@ -334,5 +335,130 @@ nav a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+}
+
+/*this is the beginning of the rivers.html css section*/
+.river-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.river-hero-image {
+    width: 100%;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.river-hero p {
+    color: #005f99;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2/3;
+    margin: 0 10px;
+    z-index: 1;
+  
+}
+.river-hero h1 {
+    color: #005f99;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    z-index: -1;
+   
+}
+
+
+.divider {
+    height: 50px;
+    background-color: #005f99;
+    margin-bottom: 10px;
+}
+.river-card-thingy {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr .25fr .25fr;
+    margin-top: 25px;
+}
+.river-card-thingy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1;
+    grid-column: 1;
+}
+.river-card-thingy h2 {
+    color: #005f99;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    grid-row: 2;
+}
+.river-card-thingy p {
+    color: #333333;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 10px;
+    grid-row: 3;
+}
+.river-card-thingy-shorter {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 468px 100px 200px;
+    margin-top: 25px;
+}
+.river-card-thingy-shorter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1;
+}
+.river-card-thingy-shorter h2 {
+    color: #005f99;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    grid-row: 2;
+}
+.river-card-thingy-shorter p {
+    color: #333333;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 10px;
+    grid-row: 3;
+}
+
+/* Media query for screen width less than 1255.33px */
+@media screen and (max-width: 1255.33px) {
+    .river-hero {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto;
+        margin-top: 25px;
+    }
+    .river-hero-image {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .river-hero h1 {
+        color: #005f99;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        grid-row: 2;
+    }
+    .river-hero p {
+        color: #333333;
+        font-size: .8em;
+        text-align: center;
+        margin-top: 10px;
+        grid-row: 3;
     }
 }
