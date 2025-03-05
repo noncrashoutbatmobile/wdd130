@@ -402,7 +402,7 @@ nav a:hover {
     color: #333333;
     font-size: .8em;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
     grid-row: 3;
 }
 .river-card-thingy-shorter {
@@ -421,7 +421,7 @@ nav a:hover {
     color: #005f99;
     font-weight: bold;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
     grid-row: 2;
 }
 .river-card-thingy-shorter p {
